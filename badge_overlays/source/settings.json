@@ -1,0 +1,32 @@
+{
+  "fps": 60,
+  "duration": 15.0,
+  "entrance_seconds": 0.4,
+  "exit_seconds": 0.3,
+  "size_scale": 1.0,
+  "supersampling": 3,
+  "pill_width": 1000,
+  "pill_height": 200,
+  "padding_x": 40,
+  "padding_y": 32,
+  "outline_width": 2,
+  "label_font_size": 102,
+  "symbol_font_size": 140,
+  "entrance_distance": 0.12,
+  "exit_distance": 0.06,
+  "initial_scale": 0.96,
+  "fill": "#F0F0F2",
+  "outline": "#D8D8DC",
+  "text": "#303038",
+  "preview_background": "#17171C",
+  "badges": [
+    {"id": "brilliant", "label": "BRILLIANT", "symbol": "!!", "color": "#A592DC"},
+    {"id": "great", "label": "GREAT", "symbol": "!", "color": "#3D7BFF"},
+    {"id": "best", "label": "BEST", "symbol": "★", "color": "#2FBF71"},
+    {"id": "good", "label": "GOOD", "symbol": "✓", "color": "#8FB573"},
+    {"id": "inaccuracy", "label": "INACCURACY", "symbol": "?!", "color": "#F2B233"},
+    {"id": "mistake", "label": "MISTAKE", "symbol": "?", "color": "#F07A2E"},
+    {"id": "miss", "label": "MISS", "symbol": "✕", "color": "#E2577F"},
+    {"id": "blunder", "label": "BLUNDER", "symbol": "??", "color": "#E0312F"}
+  ]
+}
