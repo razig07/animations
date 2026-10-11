@@ -67,11 +67,11 @@ class Renderer:
         label_size = c['label_font_size'] * ph / 200
         ls = label_size / self.units
         label_path, lb = text_outline(badge['label'], self.font)
-        lx = x + 250 * ph / 200 - lb[0] * ls
+        lx = x + c.get('label_offset', 250 * ph / 200) - lb[0] * ls
         baseline = cy + self.cap * ls / 2
         assert lx + lb[2] * ls < x + pw - 50 * ph / 200, 'Label exceeds safe right padding.'
         label = f'<path fill="{c["text"]}" transform="translate({lx},{baseline}) scale({ls}, {-ls})" d="{label_path}"/>'
-        icon_cx = x + 123 * ph / 200
+        icon_cx = x + c.get('icon_offset', 123 * ph / 200)
         symbol = badge['symbol']
         col = badge['color']
         icon_scale = ph / 200

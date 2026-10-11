@@ -1,0 +1,186 @@
+{
+  "duration": 5.0,
+  "fps": 60,
+  "frames": 300,
+  "entrance_seconds": 0.4,
+  "exit_start": 4.0,
+  "exit_seconds": 1.0,
+  "badges": {
+    "brilliant": {
+      "label": "BRILLIANT",
+      "symbol": "!!",
+      "symbol_color": "#A592DC",
+      "canvas": [
+        796,
+        264
+      ],
+      "pill": [
+        716,
+        200
+      ],
+      "layout": {
+        "label_width": 502.1806640625,
+        "symbol_width": 69.6953125,
+        "content_padding": 56.06201171875,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 90.90966796875,
+      "label_offset": 157.75732421875,
+      "audio": "Single UI Beep 12.wav"
+    },
+    "great": {
+      "label": "GREAT",
+      "symbol": "!",
+      "symbol_color": "#3D7BFF",
+      "canvas": [
+        574,
+        264
+      ],
+      "pill": [
+        494,
+        200
+      ],
+      "layout": {
+        "label_width": 325.623046875,
+        "symbol_width": 23.173828125,
+        "content_padding": 56.6015625,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 68.1884765625,
+      "label_offset": 111.775390625,
+      "audio": "Single UI Beep 12.wav"
+    },
+    "best": {
+      "label": "BEST",
+      "symbol": "\u2605",
+      "symbol_color": "#2FBF71",
+      "canvas": [
+        586,
+        264
+      ],
+      "pill": [
+        506,
+        200
+      ],
+      "layout": {
+        "label_width": 249.5712890625,
+        "symbol_width": 112.22466892282812,
+        "content_padding": 56.102021007335935,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 112.21435546875,
+      "label_offset": 200.32668993016406,
+      "audio": "Single UI Beep 12.wav"
+    },
+    "good": {
+      "label": "GOOD",
+      "symbol": "\u2713",
+      "symbol_color": "#8FB573",
+      "canvas": [
+        630,
+        264
+      ],
+      "pill": [
+        550,
+        200
+      ],
+      "layout": {
+        "label_width": 292.8017578125,
+        "symbol_width": 112.0,
+        "content_padding": 56.59912109375,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 110.59912109375,
+      "label_offset": 200.59912109375,
+      "audio": "Single UI Beep 12.wav"
+    },
+    "inaccuracy": {
+      "label": "INACCURACY",
+      "symbol": "?!",
+      "symbol_color": "#F2B233",
+      "canvas": [
+        996,
+        264
+      ],
+      "pill": [
+        916,
+        200
+      ],
+      "layout": {
+        "label_width": 662.4521484375,
+        "symbol_width": 107.90625,
+        "content_padding": 56.82080078125,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 110.77392578125,
+      "label_offset": 196.72705078125,
+      "audio": "Single UI Beep 06.wav"
+    },
+    "mistake": {
+      "label": "MISTAKE",
+      "symbol": "?",
+      "symbol_color": "#F07A2E",
+      "canvas": [
+        728,
+        264
+      ],
+      "pill": [
+        648,
+        200
+      ],
+      "layout": {
+        "label_width": 433.1513671875,
+        "symbol_width": 69.248046875,
+        "content_padding": 56.80029296875,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 91.42431640625,
+      "label_offset": 158.04833984375,
+      "audio": "Single UI Beep 06.wav"
+    },
+    "miss": {
+      "label": "MISS",
+      "symbol": "\u2715",
+      "symbol_color": "#E2577F",
+      "canvas": [
+        572,
+        264
+      ],
+      "pill": [
+        492,
+        200
+      ],
+      "layout": {
+        "label_width": 241.65234375,
+        "symbol_width": 106.0,
+        "content_padding": 56.173828125,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 109.173828125,
+      "label_offset": 194.173828125,
+      "audio": "Single UI Beep 06.wav"
+    },
+    "blunder": {
+      "label": "BLUNDER",
+      "symbol": "??",
+      "symbol_color": "#E0312F",
+      "canvas": [
+        838,
+        264
+      ],
+      "pill": [
+        758,
+        200
+      ],
+      "layout": {
+        "label_width": 460.3447265625,
+        "symbol_width": 152.681640625,
+        "content_padding": 56.48681640625,
+        "symbol_label_gap": 32.0
+      },
+      "icon_offset": 132.82763671875,
+      "label_offset": 241.16845703125,
+      "audio": "Single UI Beep 06.wav"
+    }
+  }
+}

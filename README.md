@@ -1,32 +1,26 @@
-# Animated badge overlays — downloads
+# Compact animated badges — five seconds with sound
 
-The rendered video files are in **[downloads/](downloads/)**. Each badge ZIP contains the actual ProRes 4444 `.mov`, its matching transparent `.png`, and its vector `.svg`. They are ready to import into Premiere Pro after unzipping. All clips are 15 seconds, 60 fps, 1,080 × 264 px, transparent at the start and end, and contain no audio.
+**[Download the latest badges as one ZIP](https://github.com/razig07/animations/archive/refs/heads/badge-downloads.zip)**
 
-| Badge | Download rendered video + PNG + SVG |
-| --- | --- |
-| BRILLIANT | [brilliant.zip](downloads/brilliant.zip) |
-| GREAT | [great.zip](downloads/great.zip) |
-| BEST | [best.zip](downloads/best.zip) |
-| GOOD | [good.zip](downloads/good.zip) |
-| INACCURACY | [inaccuracy.zip](downloads/inaccuracy.zip) |
-| MISTAKE | [mistake.zip](downloads/mistake.zip) |
-| MISS | [miss.zip](downloads/miss.zip) |
-| BLUNDER | [blunder.zip](downloads/blunder.zip) |
+This download contains only the `downloads/` folder: eight ready-to-use ProRes 4444 MOVs, their matching transparent PNGs, and a lightweight MP4 preview. Unzip once and import the MOVs into Premiere Pro. No rendering, source installation, or extra badge ZIP extraction is required.
 
-Open an individual ZIP on GitHub and click **Download raw file** to download it. For everything together, click the green **Code** button → **Download ZIP** at the top of this repository. The complete repository ZIP includes all eight badge ZIPs and the editable source. Unzip the badge ZIPs to get the MOVs; no rendering is required.
+The pill widths now fit each word. All badges share the same font size and pill height, with consistent padding and centered content.
 
-[MP4 preview of all eight animations](badge_overlays/deliverables/preview/all_badges_dark.mp4) · [Render and customization instructions](badge_overlays/README.md) · [Editable settings](badge_overlays/source/settings.json) · [Python source](badge_overlays/source/render.py)
+- Total duration: **5 seconds**, **60 fps**.
+- Entrance: **0.00–0.40 seconds**.
+- Hold: **0.40–4.00 seconds**.
+- Exit: **4.00–5.00 seconds**.
+- BRILLIANT, GREAT, BEST and GOOD play **Single UI Beep 12** once at the start.
+- INACCURACY, MISTAKE, MISS and BLUNDER play **Single UI Beep 06** once at the start.
 
-![All eight badges](badge_overlays/deliverables/preview/all_badges_dark.png)
+[Individual files](https://github.com/razig07/animations/tree/badge-downloads/downloads) · [MP4 preview](downloads/preview.mp4)
 
-The full exported package is too large for GitHub's 100 MiB limit on a single repository file, so the rendered videos are delivered as eight ZIPs. This preserves the exact ProRes files without recompression. Each ZIP is below that limit.
+Use **Straight — Unmatted** alpha interpretation if Premiere asks. Each PNG matches its corresponding MOV's held position and canvas size. The preview has a dark background and plays a quiet mix of the two cues; use the MOVs for compositing and the assigned individual sound.
 
-To extract all badge ZIPs into the renderer's output folders at once, run this from the downloaded repository directory (Python standard library only):
+The editable renderer remains available in [render_compact.py](badge_overlays/source/render_compact.py), with [compact_settings.json](badge_overlays/source/compact_settings.json). To rerender, install the dependencies in [requirements.txt](badge_overlays/source/requirements.txt) and run:
 
 ```sh
-python3 extract_downloads.py
+python3 badge_overlays/source/render_compact.py
 ```
 
-The resulting MOVs appear in `badge_overlays/deliverables/mov/`. Matching PNGs and SVGs are already available in `badge_overlays/deliverables/`. In Premiere Pro, use **Straight — Unmatted** alpha interpretation if prompted.
-
-All 200 export checks passed, including decoded alpha and fade timing, consistent positioning, stationary holds, no clipping, dimensions, frame count, duration and no audio. See [verification.json](badge_overlays/deliverables/quality/verification.json) for results.
+The earlier 15-second version remains in Git history. The download link above always points to the compact five-second version.
